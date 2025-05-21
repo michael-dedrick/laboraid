@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+# Design Handoff – LaborAid website
 
-## Project info
+This repo includes the final front-end code exported from (https://laboraid.lovable.app)
+Everything is cleaned up and organized for developer use. No prior commit history or noise.
 
-**URL**: https://lovable.dev/projects/e7800990-7f4a-4317-874b-f1f3cd478271
 
-## How can I edit this code?
+## What's Inside
 
-There are several ways of editing your application.
+This project was built visually in Lovable, and uses:
 
-**Use Lovable**
+- **Vite** for local dev & build
+- **Tailwind CSS** for styling (compiled via PostCSS)
+- **TypeScript** for typed JavaScript
+- **ESLint** for linting & formatting
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e7800990-7f4a-4317-874b-f1f3cd478271) and start prompting.
+No backend — this is front-end only.
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Structure
+```text
+├── public/               → static assets (images, favicon, etc.)
+├── src/                  → component logic and app source
+├── index.html            → site entry point
+├── tailwind.config.ts    → Tailwind setup
+├── vite.config.ts        → Vite config
+├── package.json          → dependencies & scripts
+├── README.md             → you’re here
 ```
 
-**Edit a file directly in GitHub**
+Notes for Devs
+- This is a clean handoff — commit history has been reset
+- Tailwind is compiled via PostCSS, no extra setup needed
+- Components and structure reflect the Lovable visual layout
+- Fully static — feel free to integrate backend or CMS
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Ready to Deploy
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e7800990-7f4a-4317-874b-f1f3cd478271) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Can be deployed to:
+- Vercel
+- Netlify
+- Any static host (Vite builds via npm run build)
