@@ -5,14 +5,16 @@ Everything is cleaned up and organized for developer use. No prior commit histor
 
 
 ## What's Inside
-
+```text
 This project was built visually in Lovable, and uses:
 
-- **Vite** for local dev & build
-- **Tailwind CSS** for styling (compiled via PostCSS)
-- **TypeScript** for typed JavaScript
-- **ESLint** for linting & formatting
-
+- [React](https://react.dev/) – Component-based UI framework
+- [Vite](https://vitejs.dev/) – Fast dev server & bundler
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/) – Typed JavaScript
+- [shadcn/ui](https://ui.shadcn.com/) – Accessible UI components built on Radix + Tailwind
+- [PostCSS](https://postcss.org/) – CSS processor for Tailwind
+```
 No backend — this is front-end only.
 
 
